@@ -11,7 +11,7 @@ dotenv.config({path:'config.env'})
 const PORT = process.env.PORT || 3000
 
 //log requests
-app.use(cors);
+app.use(cors());
 app.use(morgan('tiny'));
 connectDB();
 //parse request to body parser
